@@ -5,11 +5,8 @@ import numpy as np
 # Load a model
 model = YOLO("best.pt")
 class_names = model.names
-cam_url = ''
-cap = cv2.VideoCapture("v1.mp4")  # Initialize webcam capture
-img = cv2.imread('img.png')
-cv2.imshow(img)
 
+cap = cv2.VideoCapture("v1.mp4")  # Initialize webcam capture
 count = 0
 
 while True:
